@@ -27,6 +27,6 @@ func main() {
 		gender: "Male",
 	}
 
-	fmt.Printf("%s is a %d-year-old %s who worked in %s as a %s",
+	fmt.Printf("%s is a %d-year-old %s who worked in %s as a %s.\n",
 				person.name, person.age, person.gender, person.job.location, person.job.title)
 }
