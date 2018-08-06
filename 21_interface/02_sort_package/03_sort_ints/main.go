@@ -17,4 +17,24 @@ func main() {
 	fmt.Printf("Data before sorted: \n%v\n", profits_2018)
 	sort.Sort(profits_2018)
 	fmt.Printf("Data after sorted: \n%v\n", profits_2018)
+
+	profits_2019 := []int{11, 33, 22, 44, 77, 55}
+	fmt.Printf("Data before sorted: \n%v\n", profits_2019)
+	sort.Sort(sort.IntSlice(profits_2019)) // conversion from type []int to type IntSlice
+	// default implementations sort in ascending order
+	fmt.Printf("Data after default sorted: \n%v\n", profits_2019)
+
+	// reverse sort against default implementations
+	fmt.Printf("Data before sorted: \n%v\n", profits_2019)
+	sort.Sort(sort.Reverse(sort.IntSlice(profits_2019)))
+	// reverse sort in descending order
+	fmt.Printf("Data after reversed sorte: \n%v\n", profits_2019)
+
+
+	// another way to sort a []int
+	profits_2020 := []int{11, 33, 22, 44, 77, 55}
+	fmt.Printf("Data before sorted: \n%v\n", profits_2020)
+	sort.Ints(profits_2020)
+	fmt.Printf("Data after reversed sorte: \n%v\n", profits_2020)
+
 }
